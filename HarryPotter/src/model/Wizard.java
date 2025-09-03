@@ -6,7 +6,7 @@ import spell.ISpellBehavior;
  *
  * @author Estudiantes
  */
-public class Character {
+public class Wizard {
     
     private String name;
     private ISpellBehavior spell;
@@ -27,7 +27,7 @@ public class Character {
         this.spell = spell;
     }
     
-    Character(String name, ISpellBehavior spell){
+    public Wizard(String name, ISpellBehavior spell){
         this.name = name;
         this.spell = spell;  
     }

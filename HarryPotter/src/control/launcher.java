@@ -4,6 +4,13 @@
  */
 package control;
 
+import model.Wizard;
+import spell.ExpectoPatronum;
+import spell.Expelliarmus;
+import spell.ISpellBehavior;
+import spell.OculusReparo;
+import spell.WingardiumLeviosa;
+
 /**
  *
  * @author Estudiantes
@@ -14,7 +21,15 @@ public class launcher {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ISpellBehavior ExpectoPatronum = new ExpectoPatronum();
+        ISpellBehavior Expelliarmus = new Expelliarmus();
+        ISpellBehavior OculusReparo = new OculusReparo();
+        ISpellBehavior WingardiumLeviosa = new WingardiumLeviosa();
+        
+        Wizard Harry = new Wizard("HarryPotter", ExpectoPatronum);
+        Wizard Ron = new Wizard("RonWeasly", Expelliarmus);
+        Wizard Hermione = new Wizard("HermioneGranger", WingardiumLeviosa);
+        
     }
     
 }
