@@ -11,11 +11,11 @@ public class Wizard {
     private String name;
     private ISpellBehavior spell;
 
-    public String getNombre() {
+    public String getName() {
         return name;
     }
 
-    public void setNombre(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -32,5 +32,13 @@ public class Wizard {
         this.spell = spell;  
     }
     
+    public void castSpell(){
+        spell.spell();
+    }
+    
+    public void displayInfo(){
+        System.out.println("Nombre: " + name);
+        System.out.println("Hechizo principal: "+spell);
+    }
     
 }
